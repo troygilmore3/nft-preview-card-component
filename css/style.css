@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+  background-color: hsl(217, 54%, 11%);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+small {
+  line-height: 1.8rem;
+}
+.highlight {
+  color: white;
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  padding: 2.4rem;
+  border-radius: 16px;
+  max-width: 375px;
+}
+
+.card__header {
+  margin-bottom: 2rem;
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card__img--small {
+  width: 36px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.card__description {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.card__price {
+  color: hsl(178, 100%, 50%);
+  line-height: 1.8rem;
+  font-weight: 600;
+}
+
+.card__time {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.8rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 300;
+}
+
+.card__author {
+  margin-left: 1.8rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__icon {
+  vertical-align: bottom;
+  margin-right: 0.365rem;
+  line-height: 1.8rem;
+}

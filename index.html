@@ -4,48 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>NFT preview card component</title>
   </head>
   <body>
-    <article>
-      <div>
+    <article class="card">
+      <div class="card__header">
         <img
+          class="card__img"
           src="./images/image-equilibrium.jpg"
           alt="Equilibrium cube balancing on its corner"
           decoding="auto"
         />
       </div>
-      <header>
-        <h1>Equilibrium #3429</h1>
-      </header>
+      <h1 class="card__title highlight">Equilibrium #3429</h1>
       <main>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div>
-          <div>
+        <p class="card__description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card__details">
+          <div class="card__price">
             <img
+              class="card__icon"
               src="./images/icon-ethereum.svg"
               alt="Equilibrium icon"
               decoding="auto"
             />
-            <span>0.041 ETH</span>
+            <small>0.041 ETH</small>
           </div>
-          <div>
+          <div class="card__time">
             <img
+              class="card__icon"
               src="./images/icon-clock.svg"
               alt="Clock icon"
               decoding="auto"
             />
-            <span>3 days left</span>
+            <small>3 days left</small>
           </div>
         </div>
       </main>
-      <footer>
+      <footer class="card__footer">
         <img
+          class="card__img card__img--small"
           src="./images/image-avatar.png"
           alt="Creators avatar"
           decoding="auto"
         />
-        <p>Creation of Jules Wyvern</p>
+        <p class="card__author">
+          Creation of <span class="highlight">Jules Wyvern</span>
+        </p>
       </footer>
     </article>
   </body>
