@@ -50,7 +50,7 @@ small {
 .overlay {
   opacity: 0;
   background-color: hsla(178, 100%, 50%, 0.5);
-  background-image: url("/images/icon-view.svg");
+  background-image: url("../images/icon-view.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
